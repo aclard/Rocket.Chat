@@ -104,6 +104,7 @@ Meteor.methods({
 	}
 });
 
+// TODO
 RocketChat.models.Rooms.cache.on('sync', (type, room/*, diff*/) => {
 	const records = RocketChat.models.Subscriptions.findByRoomId(room._id).fetch();
 
